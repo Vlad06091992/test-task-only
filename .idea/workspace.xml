@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb951d34-4faa-48a2-bee9-f28767d1bf22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/circle/circle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/counter/counter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/counter/counter.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/circle/circle.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/circle/circle.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/circle/circle.s.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/circle/circle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/circle/circle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/circle/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/counter/counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/counter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,8 @@
       <workItem from="1703943174338" duration="14385000" />
       <workItem from="1703994265019" duration="22758000" />
       <workItem from="1704037369295" duration="19931000" />
-      <workItem from="1704177136790" duration="2863000" />
+      <workItem from="1704177136790" duration="3629000" />
+      <workItem from="1704185988538" duration="4523000" />
     </task>
     <servers />
   </component>

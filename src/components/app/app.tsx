@@ -1,25 +1,38 @@
 import * as React from "react";
 
-import s from "./app.module.scss"
-import CircleComponent from "../circle/circle";
 import { Counter } from "../../components/counter/counter";
 import { useState } from "react";
 const App = () => {
 
-  const[from,setFrom] = useState(10)
-  const[to,setTo] = useState(20)
+  const[numbers,setNumbers] = useState([1998,2010])
+
 
  return( <div style={{ marginTop: '300px', marginLeft: '100px' }}>
    <button onClick={()=>{
-     setTo(100)
-     setFrom(1000)
-   }}>from</button>
+     setNumbers([1999,1986])
+
+   }}>change</button>
+
+
+
    <button onClick={()=>{
-     setTo(1000)
-     setFrom(100)
-   }}>to</button>
-    <CircleComponent numPoints={3} />
-    <Counter from={from} to={to} />
+     setNumbers([2000,2005])
+
+   }}>change2</button>
+
+   <button onClick={()=>{
+     setNumbers([1996,2003])
+
+   }}>change2</button>
+
+
+   <button onClick={()=>{
+     setNumbers([1985,2030])
+
+   }}>change2</button>
+
+    {/*<CircleComponent numPoints={3} />*/}
+    <Counter leftNumber={numbers[0]} rightNumber={numbers[1]} />
   </div>)
 };
 
