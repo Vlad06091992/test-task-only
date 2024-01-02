@@ -8,7 +8,7 @@ interface CircleComponentProps {
   numPoints: number;
 }
 
-const CircleComponent: React.FC<CircleComponentProps> = ({ numPoints }) => {
+export const CircleComponent: React.FC<CircleComponentProps> = ({ numPoints }) => {
   const circlePathRef = useRef<SVGSVGElement>(null);
   const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
   const tl = useRef<gsap.core.Timeline>({} as gsap.core.Timeline);
@@ -140,7 +140,6 @@ const CircleComponent: React.FC<CircleComponentProps> = ({ numPoints }) => {
             }} />
           </svg>
         </div>
-        <div className={s.start}>&#8592; Active</div>
       </div>
       <div className={s.container} style={{ textAlign: "center" }}>
         <button id="prev" onClick={() => moveWheel(itemStep)}>Prev</button>
@@ -150,4 +149,3 @@ const CircleComponent: React.FC<CircleComponentProps> = ({ numPoints }) => {
   );
 };
 
-export default CircleComponent;
