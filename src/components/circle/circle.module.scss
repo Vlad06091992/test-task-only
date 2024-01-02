@@ -20,28 +20,13 @@ body {
   position: relative;
 }
 
-.item {
-  width: 50px;
-  height: 50px;
-  color: white;
-  text-align: center;
-  line-height: 50px;
-  font-size: 24px;
-  font-family: "Roboto", sans-serif;
-  border-radius: 100%;
-  background-color: red;
-  z-index: 1;
-  cursor: pointer;
-}
 
-.item.active {
-  background-color: blue;
-}
+
 
 svg {
-  height: 300px;
+  height: 530px;
   overflow: visible;
-  width: 300px;
+  width: 530px;
   z-index: -1;
   position: absolute;
   top: 50%;
@@ -59,4 +44,9 @@ svg {
   position: absolute;
   top: 50%;
   right: -30px;
+}
+
+.number{
+  position: relative;
+  top:10px;
 }
