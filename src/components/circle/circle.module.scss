@@ -1,27 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #fff;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 .container {
-  position: relative;
+  margin-left:455px;
+  position: absolute;
   max-width: 500px;
-  margin: auto;
 }
 
 .wrapper {
-  position: relative;
+  position: absolute;
 }
-
-
-
 
 svg {
   height: 530px;
@@ -35,18 +20,55 @@ svg {
 }
 
 .st0 { fill: none;
-  stroke:#000000;
-  stroke-width: 2;
   stroke-miterlimit:1;
+  flex-shrink: 0;
+  border-radius: 50%;
+  stroke: #42567A;      /* Set the border color */
+  stroke-width: 1px;    /* Set the border width */
+  opacity: 0.2;
 }
 
-.start {
+.divCenter {
   position: absolute;
   top: 50%;
-  right: -30px;
+  transform: translate(-52%, -55%);
+  z-index: -1;
 }
 
+
+.line {
+  position: absolute;
+}
+
+.horizontalLine {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  background-color: var(--Black-blue);
+  opacity: 0.1;
+  transform: translateX(-50%);
+}
+
+.verticalLine {
+  position: absolute;
+  width: 1px;
+  height: 100vw;
+  background-color: var(--Black-blue);
+  opacity: 0.1;
+  transform: translateY(-50%);
+}
+
+
 .number{
+  color: var(--Black-blue);
   position: relative;
-  top:10px;
+  top:12px;
+}
+
+.circle {
+  flex-shrink: 0;
+  border-radius: 50%;
+  stroke: #42567A;      /* Set the border color */
+  stroke-width: 1px;    /* Set the border width */
+  opacity: 0.2;
 }

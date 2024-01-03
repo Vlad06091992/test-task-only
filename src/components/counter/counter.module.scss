@@ -1,5 +1,11 @@
 .leftNumber,.rightNumber{
+  font-family: PT Sans;
+  text-align: center;
   font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160px; /* 80% */
+  letter-spacing: -4px;
 }
 
 .leftNumber{
@@ -12,5 +18,5 @@
 
 .counter{
   display: flex;
-  gap: 10px;
+  gap: 95px;
 }
