@@ -12,7 +12,7 @@
   max-width: 353px;
   position: absolute;
   top:170px;
-  left: 78px;
+  left: 80px;
   color: var(--Black-blue);
   font-family: PT Sans;
   font-size: 56px;
@@ -55,5 +55,12 @@
   opacity: 0.1;
   //transform: translateY(-50%);
 }
+.buttons{
+  position: absolute;
+  top:735px;
+  left:80px;
+}
 
-
+.button{
+  margin: 0 10px;
+}

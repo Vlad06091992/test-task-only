@@ -1,10 +1,12 @@
 .counter {
+  pointer-events: none;
   display: flex;
   gap: 95px;
   position: absolute;
   left: 50%; /* расположение элемента по центру */
   transform: translateX(-50%); /* смещение элемента влево на 50% его ширины */
   top: 37%;
+  z-index: -10;
 }
 
 
@@ -16,6 +18,8 @@
   font-weight: 700;
   line-height: 160px; /* 80% */
   letter-spacing: -4px;
+  z-index: -10;
+  position: relative;
 }
 
 .leftNumber{

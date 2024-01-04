@@ -22,10 +22,8 @@ const App = () => {
 
 
   return (<div>
-    {/*<Blok numPoints={6} />*/}
-    <PrevButton onClick={()=>{console.log('click')}} disabled={true}/>
-    <NextButton onClick={()=>{
-      console.log('click')}}/>
+    <Blok numPoints={6} />
+
     {/*<Circle numPoints={6} dates={dates} setNumbers={setNumbers} numbers={numbers}/>*/}
   </div>);
 };

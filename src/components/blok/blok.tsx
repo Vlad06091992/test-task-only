@@ -4,6 +4,8 @@ import { Counter } from "../counter/counter";
 
 import { Circle } from "../circle/circle";
 import { Slider } from "../slider/slider";
+import { PrevButton } from "../../components/ui/prev-button/prev-button";
+import { NextButton } from "../../components/ui/next-button/next-button";
 
 interface CircleComponentProps {
   numPoints: number;
@@ -30,7 +32,15 @@ export const Blok: React.FC<CircleComponentProps> = ({ numPoints }) => {
       <div className={`${s.line} ${s.verticalLine}`}></div>
       <Circle numbers={numbers} dates={dates} setNumbers={setNumbers} numPoints={numPoints} />
       <Counter leftNumber={numbers[0]} rightNumber={numbers[1]} />
-      <Slider/>
+      <div className={s.buttons}>
+        <PrevButton className={s.button} onClick={() => {
+          console.log("click");
+        }} disabled={true} />
+        <NextButton className={s.button} onClick={() => {
+          console.log("click");
+        }} />
+      </div>
+      <Slider />
 
     </div>
     // <div className={s.container} style={{ textAlign: "center" }}>
