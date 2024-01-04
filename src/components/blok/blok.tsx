@@ -4,12 +4,11 @@ import { Counter } from "../counter/counter";
 
 import { Circle } from "../circle/circle";
 import { Slider } from "../slider/slider";
-import { PrevButton } from "../../components/ui/prev-button/prev-button";
-import { NextButton } from "../../components/ui/next-button/next-button";
 import { HorizontalLine } from "../horizontal-line/horizontal-line";
 import { VerticalLine } from "../vertical-line/vertical-line";
 import { Title } from "../title/title";
 import { ItemTitle } from "../item-title/item-title";
+import { TimeRangeController } from "../../components/time-range-controller/time-range-controller";
 
 interface CircleComponentProps {
   numPoints: number;
@@ -37,14 +36,7 @@ export const Blok: React.FC<CircleComponentProps> = ({ numPoints }) => {
       <VerticalLine/>
       <Circle numbers={numbers} dates={dates} setNumbers={setNumbers} numPoints={numPoints} />
       <Counter leftNumber={numbers[0]} rightNumber={numbers[1]} />
-      <div className={s.buttons}>
-        <PrevButton className={s.button} onClick={() => {
-          console.log("click");
-        }} disabled={true} />
-        <NextButton className={s.button} onClick={() => {
-          console.log("click");
-        }} />
-      </div>
+      <TimeRangeController currentRange={4} numberOfRanges={6}/>
       <Slider />
 
     </div>
