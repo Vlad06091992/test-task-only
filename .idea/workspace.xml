@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb951d34-4faa-48a2-bee9-f28767d1bf22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/slider/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/slider/slider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blok/blok.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blok/blok.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blok/blok.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blok/blok.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/circle/circle.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/circle/circle.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/circle/circle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/circle/circle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/counter/counter.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/counter.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +29,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Admin\\Desktop\\test-task-only\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.last.introduce.type": "CONST",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/test-task-only/src/components/circleNew",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\Admin\\Desktop\\test-task-only\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\test-task-only\src\components\circleNew" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\test-task-only\src\components\app" />
     </key>
@@ -65,7 +66,8 @@
       <workItem from="1703994265019" duration="22758000" />
       <workItem from="1704037369295" duration="19931000" />
       <workItem from="1704177136790" duration="3629000" />
-      <workItem from="1704185988538" duration="11968000" />
+      <workItem from="1704185988538" duration="35418000" />
+      <workItem from="1704369714463" duration="6693000" />
     </task>
     <servers />
   </component>

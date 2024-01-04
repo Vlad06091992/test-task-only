@@ -2,40 +2,27 @@ import * as React from "react";
 
 import { Counter } from "../../components/counter/counter";
 import { useState } from "react";
-import { CircleComponent } from "../../components/circle/circle";
-import { Blok } from "../../components/blok/blok";
+import { Blok } from "../blok/blok";
+import { Circle } from "../circle/circle";
+
 const App = () => {
 
-  const[numbers,setNumbers] = useState([1998,2010])
+  const dates = [
+    [2015, 2022],
+    [1990, 2000],
+    [1995, 2006],
+    [2005, 2007],
+    [1986, 2030],
+    [1992, 1997]
+  ];
+
+  const [numbers, setNumbers] = useState(dates[0]);
 
 
- return( <div style={{ marginTop: '300px', marginLeft: '300px' }}>
-   {/*<button onClick={()=>{*/}
-   {/*  setNumbers([1999,1986])*/}
-
-   {/*}}>change</button>*/}
-
-
-
-   {/*<button onClick={()=>{*/}
-   {/*  setNumbers([2000,2005])*/}
-
-   {/*}}>change2</button>*/}
-
-   {/*<button onClick={()=>{*/}
-   {/*  setNumbers([1996,2003])*/}
-
-   {/*}}>change2</button>*/}
-
-
-   {/*<button onClick={()=>{*/}
-   {/*  setNumbers([1985,2030])*/}
-
-   {/*}}>change2</button>*/}
-{/*<Blok/>*/}
-    <CircleComponent numPoints={6} />
-    {/*<Counter leftNumber={numbers[0]} rightNumber={numbers[1]} />*/}
-  </div>)
+  return (<div>
+    <Blok numPoints={6} />
+    {/*<Circle numPoints={6} dates={dates} setNumbers={setNumbers} numbers={numbers}/>*/}
+  </div>);
 };
 
 export default App;

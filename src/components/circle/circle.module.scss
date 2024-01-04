@@ -1,11 +1,7 @@
-.container {
-  margin-left:455px;
+.circle {
   position: absolute;
-  max-width: 500px;
-}
-
-.wrapper {
-  position: absolute;
+  left: 50%;
+  margin-top:calc(265px + 215px);
 }
 
 svg {
@@ -28,47 +24,8 @@ svg {
   opacity: 0.2;
 }
 
-.divCenter {
-  position: absolute;
-  top: 50%;
-  transform: translate(-52%, -55%);
-  z-index: -1;
-}
-
-
-.line {
-  position: absolute;
-}
-
-.horizontalLine {
-  position: absolute;
-  width: 1440px;
-  height: 1px;
-  background-color: var(--Black-blue);
-  opacity: 0.1;
-  transform: translateX(-50%);
-}
-
-.verticalLine {
-  position: absolute;
-  width: 1px;
-  height: 100vw;
-  background-color: var(--Black-blue);
-  opacity: 0.1;
-  transform: translateY(-50%);
-}
-
-
 .number{
   color: var(--Black-blue);
   position: relative;
   top:12px;
-}
-
-.circle {
-  flex-shrink: 0;
-  border-radius: 50%;
-  stroke: #42567A;      /* Set the border color */
-  stroke-width: 1px;    /* Set the border width */
-  opacity: 0.2;
 }

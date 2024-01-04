@@ -1,3 +1,13 @@
+.counter {
+  display: flex;
+  gap: 95px;
+  position: absolute;
+  left: 50%; /* расположение элемента по центру */
+  transform: translateX(-50%); /* смещение элемента влево на 50% его ширины */
+  top: 37%;
+}
+
+
 .leftNumber,.rightNumber{
   font-family: PT Sans;
   text-align: center;
@@ -16,7 +26,3 @@
   color: var(--Fuschia-100);
 }
 
-.counter{
-  display: flex;
-  gap: 95px;
-}
