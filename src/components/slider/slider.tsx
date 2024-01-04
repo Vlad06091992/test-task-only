@@ -52,13 +52,13 @@ const eclipseEvents = [
 
 export const Slider = () => {
   return (
-    <div style={{marginTop:'140px'}}>
-      <Swiper slidesPerView={'auto'} freeMode navigation={true} modules={[Navigation]} style={{ width: '100%', height: '100%' }}>
+    <div style={{marginTop:'841px'}}>
+      <Swiper slidesPerView={'auto'} freeMode navigation={true} modules={[Navigation]} style={{ width: '85%', height: '100%' }}>
         {eclipseEvents.map((event, index) => (
-          <SwiperSlide key={index} style={{ width: '400px', height: '100%' }}>
-            <div className="eclipse-event">
+          <SwiperSlide key={index} style={{ maxWidth: '400px', height: '100%' }}>
+            <div style={{margin:'0px 40px'}} className="eclipse-event">
               <p className={s.year}>{event.year}</p>
-              <p>{event.description}</p>
+              <p className={s.description}>{event.description}</p>
             </div>
           </SwiperSlide>
         ))}

@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb951d34-4faa-48a2-bee9-f28767d1bf22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/svg/triangle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/prev-button/prev-button.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/prev-button/prev-button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blok/blok.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blok/blok.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/blok/blok.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blok/blok.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/circle/circle.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/circle/circle.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/circle/circle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/circle/circle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/counter/counter.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter/counter.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
       <recent name="C:\Users\Admin\Desktop\test-task-only\src\components\circleNew" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\test-task-only\src\components\svg" />
       <recent name="C:\Users\Admin\Desktop\test-task-only\src\components\app" />
     </key>
   </component>
@@ -67,7 +69,7 @@
       <workItem from="1704037369295" duration="19931000" />
       <workItem from="1704177136790" duration="3629000" />
       <workItem from="1704185988538" duration="35418000" />
-      <workItem from="1704369714463" duration="6693000" />
+      <workItem from="1704369714463" duration="9760000" />
     </task>
     <servers />
   </component>

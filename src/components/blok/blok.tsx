@@ -3,6 +3,7 @@ import s from "./blok.module.scss";
 import { Counter } from "../counter/counter";
 
 import { Circle } from "../circle/circle";
+import { Slider } from "../slider/slider";
 
 interface CircleComponentProps {
   numPoints: number;
@@ -29,6 +30,8 @@ export const Blok: React.FC<CircleComponentProps> = ({ numPoints }) => {
       <div className={`${s.line} ${s.verticalLine}`}></div>
       <Circle numbers={numbers} dates={dates} setNumbers={setNumbers} numPoints={numPoints} />
       <Counter leftNumber={numbers[0]} rightNumber={numbers[1]} />
+      <Slider/>
+
     </div>
     // <div className={s.container} style={{ textAlign: "center" }}>
     //   <button id="prev" onClick={() => moveWheel(itemStep)}>Prev</button>
