@@ -6,6 +6,10 @@ import { Circle } from "../circle/circle";
 import { Slider } from "../slider/slider";
 import { PrevButton } from "../../components/ui/prev-button/prev-button";
 import { NextButton } from "../../components/ui/next-button/next-button";
+import { HorizontalLine } from "../horizontal-line/horizontal-line";
+import { VerticalLine } from "../vertical-line/vertical-line";
+import { Title } from "../title/title";
+import { ItemTitle } from "../item-title/item-title";
 
 interface CircleComponentProps {
   numPoints: number;
@@ -27,9 +31,10 @@ export const Blok: React.FC<CircleComponentProps> = ({ numPoints }) => {
 
   return (
     <div className={s.container}>
-      <p className={s.title}>Исторические даты</p>
-      <div className={`${s.line} ${s.horizontalLine}`}></div>
-      <div className={`${s.line} ${s.verticalLine}`}></div>
+     <Title title={'Исторические даты'}/>
+      <ItemTitle title={'Наука'}/>
+      <HorizontalLine/>
+      <VerticalLine/>
       <Circle numbers={numbers} dates={dates} setNumbers={setNumbers} numPoints={numPoints} />
       <Counter leftNumber={numbers[0]} rightNumber={numbers[1]} />
       <div className={s.buttons}>

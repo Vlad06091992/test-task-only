@@ -1,0 +1,22 @@
+.line {
+  position: absolute;
+}
+
+.horizontalLine {
+  position: absolute;
+  top:480px;
+
+  width: 100%;
+  height: 1px;
+  background-color: var(--Black-blue);
+  opacity: 0.1;
+}
+
+.verticalLine {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: var(--Black-blue);
+  opacity: 0.1;
+}
