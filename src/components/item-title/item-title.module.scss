@@ -1,7 +1,7 @@
-.itemTitle{
+.itemTitle {
   margin: 0;
   position: absolute;
-  top:238px;
+  top: 238px;
   left: 63%;
   color: var(--Black-blue, #42567A);
   font-family: PT Sans;
@@ -9,4 +9,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: 30px; /* 150% */
+  //opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.itemTitle.hidden {
+  opacity: 0;
+}
+
+.itemTitle.fadeOut {
+  transition: opacity 0.5s ease-in-out 0.5s; /* добавляем задержку после 0.5 секунды */
+  opacity: 0;
 }

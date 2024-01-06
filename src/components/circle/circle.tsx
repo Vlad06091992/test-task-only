@@ -5,18 +5,19 @@ import { useCircleAnimation } from "./useCircleAnimation";
 
 type Props = {
   numPoints:number,
-  dates:Array<Array<number>>
-  setNumbers:(arg:Array<number>)=>void
-  numbers:Array<number>
+  changeCurrentData:(i:number)=>void
+  changeCurrentIndex:(i:number)=>void
+  index:number
 }
 
-export const Circle = ({numPoints,dates,setNumbers,numbers}:Props) => {
-  const { wrapper, onClickHandler, itemsRef, circlePathRef, trackerRef } = useCircleAnimation(numbers, numPoints);
+export const Circle = ({numPoints,changeCurrentData,changeCurrentIndex,index}:Props) => {
+  const { wrapper, onClickHandler, itemsRef, circlePathRef, trackerRef } = useCircleAnimation( numPoints,index);
 
   const onClickHandlerWithPromise = (index:number) => {
     Promise.resolve()
       .then((res) => {
-        setNumbers(dates[index]);
+        changeCurrentData(index);
+        changeCurrentIndex(index);
       })
       .then(() => {
         onClickHandler(index);

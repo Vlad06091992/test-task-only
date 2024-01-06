@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb951d34-4faa-48a2-bee9-f28767d1bf22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/swiper/slider-nav-buttons/slider-nav-buttons.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/swiper/slider-nav-buttons/slider-nav-buttons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/swiper/slider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/blok/blok.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blok/blok.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/slider.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/swiper-nav-buttons/swiper-nav-buttons.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/swiper-nav-buttons/swiper-nav-buttons.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/circle/circle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/circle/circle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/circle/useCircleAnimation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/circle/useCircleAnimation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item-title/item-title.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-title/item-title.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item-title/item-title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-title/item-title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiper/slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/slider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/time-range-controller/time-range-controller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/time-range-controller/time-range-controller.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,7 @@
       <workItem from="1704369714463" duration="16881000" />
       <workItem from="1704471284579" duration="1358000" />
       <workItem from="1704472692776" duration="5399000" />
-      <workItem from="1704518420354" duration="7107000" />
+      <workItem from="1704518420354" duration="13638000" />
     </task>
     <servers />
   </component>

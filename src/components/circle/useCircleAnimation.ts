@@ -1,8 +1,8 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
-import gsap from 'gsap';
-import MotionPathPlugin from 'gsap/MotionPathPlugin';
+import gsap from "gsap";
+import MotionPathPlugin from "gsap/MotionPathPlugin";
 
-export const useCircleAnimation = (numbers:Array<number>,numPoints:number) => {
+export const useCircleAnimation = (numPoints:number,index:number) => {
   const circlePathRef = useRef<SVGSVGElement>(null);
   const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
   const tl = useRef<gsap.core.Timeline>({} as gsap.core.Timeline);
@@ -20,7 +20,7 @@ export const useCircleAnimation = (numbers:Array<number>,numPoints:number) => {
 
 
   gsap.registerPlugin(MotionPathPlugin);
-  useLayoutEffect(() => {
+  useEffect(() => {
     const circlePath = MotionPathPlugin.convertToPath("#holder", false)[0];
     circlePath.id = "circlePath";
     circlePathRef.current?.appendChild(circlePath);
@@ -64,6 +64,9 @@ export const useCircleAnimation = (numbers:Array<number>,numPoints:number) => {
     }, 0);
   }, []);
 
+  useEffect(() => {
+    rotate(index)
+  }, [index]);
 
   function rotate(i:number) {
     let current = trackerRef.current.item;

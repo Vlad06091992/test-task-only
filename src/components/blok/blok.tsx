@@ -8,84 +8,39 @@ import { Title } from "../title/title";
 import { ItemTitle } from "../item-title/item-title";
 import { TimeRangeController } from "../../components/time-range-controller/time-range-controller";
 import { Slider } from "../../components/swiper/slider";
+import { Data } from "../../components/app/app";
+
 
 
 interface CircleComponentProps {
-  numPoints: number;
+  data:Data
 }
 
-export const Blok: React.FC<CircleComponentProps> = ({ numPoints }) => {
+export const Blok: React.FC<CircleComponentProps> = ({ data }) => {
+  const [index, setIndex] = useState(0);
+  const [currentData, setCurrentData] = useState(data[0]);
 
-  const eclipseEvents = [
-    {
-      year: 2005,
-      description: "Частное солнечное затмение, видимое в Южной Африке и части Антарктиды"
-    },
-    {
-      year: 2005,
-      description: "Частное солнечное затмение, видимое в Австралии, Новой Зеландии и островах Тихого океана"
-    },
-    {
-      year: 2005,
-      description: "Полное солнечное затмение, видимое в Южной Африке, Австралии и Новой Зеландии"
-    },
-    {
-      year: 2005,
-      description: "Частное солнечное затмение, видимое в большей части Южной Америки"
-    },
-    {
-      year: 2005,
-      description: "Полное солнечное затмение, видимое в Южной Америке, юго-западной части Африки и Антарктиде"
-    },
-    {
-      year: 2005,
-      description: "Частное солнечное затмение, видимое в большей части Северной Америки"
-    },
-    {
-      year: 2005,
-      description: "Частное солнечное затмение, видимое в Австралии, Новой Зеландии и островах Тихого океана"
-    },
-    {
-      year: 2005,
-      description: "Частное солнечное затмение, видимое в большей части Северной Америки"
-    },
-    {
-      year: 2005,
-      description: "Частное солнечное затмение, видимое в большей части Африки и Азии"
-    },
-    {
-      year: 2005,
-      description: "Частное солнечное затмение, видимое в Южной Америке, Африке и островах Тихого океана"
-    }
-  ];
+  console.log(index);
 
-  const dates = [
-    [2015, 2022],
-    [1990, 2000],
-    [1995, 2006],
-    [2005, 2007],
-    [1986, 2030],
-    [1992, 1997]
-  ];
+  const changeCurrentData = (index:number) =>{
+    setCurrentData(data[index])
+  }
 
-  const [numbers, setNumbers] = useState(dates[0]);
-
+  const changeCurrentIndex = (index:number) =>{
+      setIndex(index)
+  }
 
   return (
     <div className={s.container}>
       <Title title={"Исторические даты"} />
-      <ItemTitle title={"Наука"} />
+      <ItemTitle title={currentData.theme} />
       <HorizontalLine />
       <VerticalLine />
-      <Circle numbers={numbers} dates={dates} setNumbers={setNumbers} numPoints={numPoints} />
-      <Counter leftNumber={numbers[0]} rightNumber={numbers[1]} />
-      <TimeRangeController currentRange={4} numberOfRanges={6} />
-      <Slider eclipseEvents={eclipseEvents} />
+      <Circle index={index} changeCurrentIndex={changeCurrentIndex} changeCurrentData={changeCurrentData} numPoints={data.length} />
+      <Counter leftNumber={currentData.dates[0]} rightNumber={currentData.dates[1]} />
+      <TimeRangeController changeCurrentIndex={changeCurrentIndex} changeCurrentData={changeCurrentData}  index={index} currentRange={index + 1} numberOfRanges={data.length} />
+      <Slider eclipseEvents={currentData.items} />
     </div>
-    // <div className={s.container} style={{ textAlign: "center" }}>
-    //   <button id="prev" onClick={() => moveWheel(itemStep)}>Prev</button>
-    //   <button id="next" onClick={() => moveWheel(-itemStep)}>Next</button>
-    // </div>
   );
 };
 
