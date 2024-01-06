@@ -1,0 +1,24 @@
+.button{
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 15px rgba(56, 119, 238, 0.10));
+  cursor: pointer;
+  top:900px;
+  left: 5%;
+  z-index: 1000;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+}
+
+.prevButton{
+  left: 5%;
+}
+.nextButton{
+  left:92%;
+}
+
+.button:disabled{
+  display: none;
+}

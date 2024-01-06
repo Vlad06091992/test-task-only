@@ -1,11 +1,6 @@
 import * as React from "react";
-
-import { Counter } from "../../components/counter/counter";
 import { useState } from "react";
 import { Blok } from "../blok/blok";
-import { Circle } from "../circle/circle";
-import { PrevButton } from "../../components/ui/prev-button/prev-button";
-import { NextButton } from "../../components/ui/next-button/next-button";
 
 const App = () => {
 
@@ -23,8 +18,6 @@ const App = () => {
 
   return (<div>
     <Blok numPoints={6} />
-
-    {/*<Circle numPoints={6} dates={dates} setNumbers={setNumbers} numbers={numbers}/>*/}
   </div>);
 };
 
