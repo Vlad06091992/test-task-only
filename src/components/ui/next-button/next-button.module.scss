@@ -13,6 +13,10 @@ button {
   height: 50px;
   border: 1px solid rgba(66, 86, 122, 0.5);
   border-radius: 50%;
+  @media (max-width: 320px) {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .nextButton:hover {

@@ -10,3 +10,6 @@ $border-color: red;
     background-color: $bg-color;
   }
 }
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}

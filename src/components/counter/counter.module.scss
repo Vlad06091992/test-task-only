@@ -10,7 +10,7 @@
 }
 
 
-.leftNumber,.rightNumber{
+.leftNumber, .rightNumber {
   font-family: PT Sans;
   text-align: center;
   font-size: 200px;
@@ -22,6 +22,16 @@
   position: relative;
 }
 
+@media (max-width: 320px) {
+  .counter{
+    top:168px;
+    gap:20px;
+  }
+  .leftNumber, .rightNumber {
+    font-size: 56px;
+    line-height: 56px; /* Настройте высоту строки по вашему желанию */
+  }
+}
 .leftNumber{
   color:var(--Iris-100)
 }

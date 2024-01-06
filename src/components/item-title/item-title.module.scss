@@ -9,15 +9,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 30px; /* 150% */
-  //opacity: 1;
   transition: opacity 0.5s ease-in-out;
-}
-
-.itemTitle.hidden {
-  opacity: 0;
-}
-
-.itemTitle.fadeOut {
-  transition: opacity 0.5s ease-in-out 0.5s; /* добавляем задержку после 0.5 секунды */
-  opacity: 0;
+  @media (max-width: 320px) {
+    top:250px;
+    left:20px;
+    font-size: 16px;
+  }
 }

@@ -19,4 +19,7 @@
   height: 100%;
   background-color: var(--Black-blue);
   opacity: 0.1;
+  @media (max-width: 320px) {
+    display: none;
+  }
 }

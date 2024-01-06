@@ -19,9 +19,9 @@ export const TimeRangeController = ({
                                       changeCurrentData
                                     }: Props) => {
   return (<div className={s.pagination}>
-    <p>0{currentRange}/0{numberOfRanges}</p>
+    <p className={s.numbers}>0{currentRange}/0{numberOfRanges}</p>
     {/*<p className=`0{s.pages}`>{currentRange}/0{numberOfRanges}</p>*/}
-    <div>
+    <div className={s.buttonsWrapper}>
       <PrevButton className={s.button} onClick={() => {
         changeCurrentData(index - 1);
         changeCurrentIndex(index - 1);

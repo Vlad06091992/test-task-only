@@ -10,4 +10,7 @@
   height: 1px;
   background-color: var(--Black-blue);
   opacity: 0.1;
+  @media (max-width: 320px) {
+    top:293px
+  }
 }
