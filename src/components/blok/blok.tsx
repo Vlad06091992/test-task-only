@@ -9,6 +9,7 @@ import { ItemTitle } from "../item-title/item-title";
 import { TimeRangeController } from "../../components/time-range-controller/time-range-controller";
 import { Slider } from "../../components/swiper/slider";
 import { Data } from "../../components/app/app";
+import { Line } from "../../components/svg/line";
 
 
 
@@ -32,6 +33,9 @@ export const Blok: React.FC<CircleComponentProps> = ({ data }) => {
 
   return (
     <div className={s.container}>
+      <div className={s.lineWrapper}>
+        <Line />
+      </div>
       <Title title={"Исторические даты"} />
       <ItemTitle title={currentData.theme} />
       <HorizontalLine />
