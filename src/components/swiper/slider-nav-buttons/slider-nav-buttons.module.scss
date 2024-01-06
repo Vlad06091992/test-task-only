@@ -10,6 +10,9 @@
   height: 40px;
   background: white;
   border-radius: 50%;
+  @media (max-width: 320px) {
+    display: none;
+  }
 }
 
 .prevButton{

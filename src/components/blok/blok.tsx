@@ -21,7 +21,6 @@ export const Blok: React.FC<CircleComponentProps> = ({ data }) => {
   const [index, setIndex] = useState(0);
   const [currentData, setCurrentData] = useState(data[0]);
 
-  console.log(index);
 
   const changeCurrentData = (index:number) =>{
     setCurrentData(data[index])

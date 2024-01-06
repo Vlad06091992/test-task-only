@@ -8,9 +8,10 @@
     left: 40px !important;
 }
 
-.swiper{
-    overflow: hidden;
+.swiper {
+    overflow: hidden !important;
     @media (max-width: 320px) {
-        overflow: initial;
+        overflow-x: clip !important;
+        overflow-y: initial !important;
     }
 }
