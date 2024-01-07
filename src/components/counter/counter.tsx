@@ -2,7 +2,12 @@ import React from "react";
 import s from "./counter.module.scss";
 import { useCounter } from "./useCounter";
 
-export const Counter = React.memo(({ leftNumber, rightNumber }: any) => {
+type Props = {
+  leftNumber:number
+  rightNumber:number
+}
+
+export const Counter = React.memo(({ leftNumber, rightNumber }: Props) => {
   const { animate, rightNumberRef, leftNumberRef } = useCounter(leftNumber, rightNumber);
 
   return (<div className={s.counter}>
